@@ -8,6 +8,28 @@ body {
   background-attachment: fixed;
 }
 
+.become {
+  font-family: "Become";
+}
+
+.relative-book {
+  font-family: "RelativeBook";
+}
+
+.circles { 
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 35px;
+  display: inline-block;
+}
+
 .container-outer {
   margin: 0px auto;
   width: 100%;
@@ -65,11 +87,28 @@ p.subhead {
   border-right: 0px;
 }
 
-.become {
-  font-family: "Become";
+.card > a > div {
+  height: 100%;
 }
 
-.relative-book {
-  font-family: "RelativeBook";
+.card p {
+  font-size: 3rem;
 }
 
+.card a {
+  padding: 40px;
+}
+
+p.datetime {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 910px) {
+  .card p {
+    font-size: 2em;
+  }
+
+  p.datetime {
+    font-size: 1.5em;
+  }
+}
