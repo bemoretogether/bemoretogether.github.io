@@ -90,6 +90,10 @@ body:after{
   .container-outer:last-child { height: auto; }
 }
 
+@media only screen and (orientation: landscape) {
+  .container-outer { height: auto; }
+}
+
 .container-inner {
   border: 3px solid black;
   height: 100%;
