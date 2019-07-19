@@ -139,8 +139,9 @@ p.subhead { margin-top: 12px; }
   font-size: 3rem;
 }
 
-.card a {
-  padding: 40px;
+.card a { padding: 40px; }
+@media only screen and (max-width: 620px) {
+  .card a { padding: 30px; }
 }
 
 p.datetime {
