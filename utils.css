@@ -1,4 +1,4 @@
-.display-flex {
+.d-flex {
   display: flex;
   flex-direction: column;
 }
@@ -44,3 +44,13 @@
   src: url("fonts/Relative/relative-faux.eot");
   src: url("fonts/Relative/relative-faux.woff") format("woff");
 }
+
+.flex-row-lg { flex-direction: row; }
+.flex-grow-lg { flex-grow: 1; }
+
+@media only screen and (max-width: 620px) {
+  .d-block-sm { display: block !important; }
+  .flex-grow-sm { flex-grow: 1 !important }
+  .flex-grow-lg { flex-grow: inherit }
+}
+

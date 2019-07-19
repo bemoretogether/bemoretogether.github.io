@@ -3,19 +3,18 @@
   <head>
     <link href="style.css" rel="stylesheet">
     <link href="utils.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="container-outer">
-      <div class="container-inner display-flex">
-        <div class="section flex-grow">
-          <div class="position-relative">
-            <img src="images/logo.png" width="50%">
-            <div class="circles">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
+      <div class="container-inner d-flex">
+        <div class="section flex-grow position-relative">
+          <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
+          <img src="images/logo.png" class="logo">
           <p class="subhead become">A Communal Conference <br> September 13, 2019</p>
         </div>
         <div>
@@ -23,7 +22,7 @@
             Request an Invitation
           </a>
         </div>
-        <div class="section display-flex">
+        <div class="section d-flex hide-sm">
           <div class="flex-1">
             <p class="relative-book" style="width:48%;">A gathering on the future of communal spaces and resources.</p>
           </div>
@@ -34,19 +33,19 @@
     </div>
 
     <div class="container-outer">
-      <div class="container-inner display-flex">
-        <div class="section display-flex flex-row">
+      <div class="container-inner d-flex">
+        <div class="section d-flex flex-row flex-grow-sm">
           <div class="flex-1">
-            <img src="images/coming_up.png" width="50%">
+            <img src="images/coming_up.png" class="logo">
           </div>
-          <div>
+          <div class="hide-sm">
             <img src="images/shape.png">
           </div>
         </div>
-        <div class="display-flex flex-row flex-grow" style="border-top: 3px solid black;">
+        <div class="d-block-sm d-flex flex-row-lg flex-grow-lg" style="border-top: 3px solid black;">
           <div class="card flex-1">
             <a href="#" class="big-link">
-              <div class="display-flex">
+              <div class="d-flex">
                 <p class="relative-book flex-grow">LAUNCH PARTY</p>
                 <p class="datetime relative-book">Sep 13<br>00pm-00pm</p>
               </div>
@@ -54,7 +53,7 @@
           </div>
           <div class="card flex-1">
             <a href="#" class="big-link">
-              <div class="display-flex">
+              <div class="d-flex">
                 <p class="relative-book flex-grow">HOUSE WARMING</p>
                 <p class="datetime relative-book">Sep 13<br>00pm-00pm</p>
               </div>
@@ -62,7 +61,7 @@
           </div>
           <div class="card flex-1">
             <a href="#" class="big-link">
-              <div class="display-flex">
+              <div class="d-flex">
                 <p class="relative-book flex-grow">BACKLOT FESTIVAL</p>
                 <p class="datetime relative-book">Sep 13<br>00pm-00pm</p>
               </div>

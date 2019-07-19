@@ -16,10 +16,26 @@ body {
   font-family: "RelativeBook";
 }
 
+.logo { width: 50%; }
+@media only screen and (max-width: 620px) {
+  .logo { width: 100%; }
+}
+
 .circles { 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 40px;
+  right: 40px;
+}
+
+@media only screen and (max-width: 620px) {
+  .circles {
+    width: 100%;
+    bottom: 30px;
+    left: 0px;
+    top: auto;
+    right: auto;
+    text-align: center;
+  }
 }
 
 .circle {
@@ -28,6 +44,15 @@ body {
   background: black;
   border-radius: 35px;
   display: inline-block;
+}
+
+@media only screen and (max-width: 620px) {
+  .circle {
+    width: 26%;
+    height: 0;
+    padding-bottom: 26%;
+    border-radius: 100px;
+  }
 }
 
 .container-outer {
@@ -43,18 +68,25 @@ body {
   height: 100%;
 }
 
-.section {
-  padding: 40px;
+.section { padding: 40px; }
+@media only screen and (max-width: 620px) {
+  .section { padding: 30px; }
 }
 
 p {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 0px;
   padding: 0px;
 }
 
-p.subhead {
-  margin-top: 12px;
+@media only screen and (max-width: 620px) {
+  p { font-size: 1.3rem }
+}
+
+p.subhead { margin-top: 12px; }
+
+@media only screen and (max-width: 620px) {
+  p.subhead { margin-top: 14px; }
 }
 
 .request-invitation {
@@ -64,6 +96,13 @@ p.subhead {
   border-bottom: 3px solid black;
   font-size: 26px;
   font-family: "RelativeBook";
+}
+
+@media only screen and (max-width: 620px) {
+  .request-invitation { 
+    padding: 30px 0px;
+    border-bottom: none;
+  }
 }
 
 .big-link {
@@ -79,12 +118,17 @@ p.subhead {
   background: black;
 }
 
-.card {
-  border-right: 3px solid black;
+.card { border-right: 3px solid black; }
+@media only screen and (max-width: 620px) {
+  .card { 
+    border-right: none;
+    border-bottom: 3px solid black;
+  }
 }
 
-.card:last-child {
-  border-right: 0px;
+.card:last-child { border-right: 0px; }
+@media only screen and (max-width: 620px) {
+  .card:last-child { border-bottom: 0px; }
 }
 
 .card > a > div {
@@ -111,4 +155,8 @@ p.datetime {
   p.datetime {
     font-size: 1.5em;
   }
+}
+
+@media only screen and (max-width: 620px) {
+  .hide-sm { display: none !important; }
 }
