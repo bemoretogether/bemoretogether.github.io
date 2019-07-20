@@ -101,26 +101,26 @@ body {
   padding: 24px;
   padding-bottom: 0;
 }
-
-.container-outer:last-child {
-  padding-bottom: 24px;
+@media only device and (orientation: landscape) {
+  .container-outer { height: auto; }
 }
 
 .container-outer:nth-child(2) {
   height: 100vh;
 }
+@media only screen and (max-width: 620px) {
+  .container-outer:nth-child(2) {
+    height: auto;
+  }
+}
 
 .container-outer:last-child {
   height: auto;
   min-height: auto;
+  padding-bottom: 24px;
 }
-
 @media only screen and (max-width: 620px) {
   .container-outer:last-child { height: auto; }
-}
-
-@media only device and (orientation: landscape) {
-  .container-outer { height: auto; }
 }
 
 .container-inner {
