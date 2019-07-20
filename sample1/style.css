@@ -101,17 +101,19 @@ body {
   padding: 24px;
   padding-bottom: 0;
 }
-@media only device and (orientation: landscape) {
-  .container-outer { height: auto; }
-}
 
 .container-outer:nth-child(2) {
   height: 100vh;
 }
+
 @media only screen and (max-width: 620px) {
   .container-outer:nth-child(2) {
     height: auto;
   }
+}
+
+@media only device and (orientation: landscape) {
+  .container-outer { height: auto; }
 }
 
 .container-outer:last-child {
