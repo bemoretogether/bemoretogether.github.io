@@ -99,6 +99,20 @@ body {
   max-width: 1020px;
   min-height: 100vh;
   padding: 24px;
+  padding-bottom: 0;
+}
+
+.container-outer:last-child {
+  padding-bottom: 24px;
+}
+
+.container-outer:nth-child(2) {
+  height: 100vh;
+}
+
+.container-outer:last-child {
+  height: auto;
+  min-height: auto;
 }
 
 @media only screen and (max-width: 620px) {
@@ -256,8 +270,6 @@ p.datetime {
 }
 
 .black-bar {
-  margin-top: 20px; 
-  margin-bottom: 100px;
   height: 100px;
   background: black;
 }
