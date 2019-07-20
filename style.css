@@ -103,6 +103,12 @@ body:after{
 @media only screen and (max-width: 620px) {
   .section { padding: 30px; }
 }
+@media only screen and (max-width: 360px) {
+  .container-outer { height: auto; }
+  .container-outer:first-child > .container-inner > .section:first-child {
+    padding-bottom: 160px;
+  }
+}
 
 p {
   font-size: 1.5rem;
@@ -166,8 +172,12 @@ p.subhead { margin-top: 12px; }
   height: 100%;
 }
 
-.card p {
-  font-size: 3rem;
+.card p { font-size: 3rem; }
+@media only screen and (max-width: 910px) {
+  .card p { font-size: 2rem; }
+}
+@media only screen and (max-width: 800px) {
+  .card p { font-size: 1.8rem; }
 }
 
 .card a { padding: 34px; }
@@ -178,17 +188,35 @@ p.subhead { margin-top: 12px; }
 p.datetime {
   font-size: 2rem;
 }
-
-@media only screen and (max-width: 910px) {
-  .card p {
-    font-size: 2em;
-  }
-
-  p.datetime {
-    font-size: 1.5em;
+@media only screen and (max-width: 820px) {
+  p.datetime { font-size: 1.5rem; }
+}
+@media only screen and (max-width: 680px) {
+  p.datetime { 
+    font-size: 1.3rem;
+    margin-top: 34px;
   }
 }
 
+.footer-copy { width: 60%; }
+@media only screen and (max-width: 940px) {
+  .footer-copy { width: 68%; }
+}
+@media only screen and (max-width: 870px) {
+  .footer-copy { width: 78%; }
+}
+@media only screen and (max-width: 790px) {
+  .footer-copy { width: 90%; }
+}
 @media only screen and (max-width: 620px) {
-  .hide-sm { display: none !important; }
+  .footer-copy { width: auto; }
+}
+
+@media only screen and (max-width: 620px) {
+  .footer { background: black; }
+  .footer-logo-container {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-logo { fill: rgb(253, 229, 157); }
 }
