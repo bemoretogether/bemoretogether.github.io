@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: rgb(247, 210, 87);
+  background-color: rgb(247, 222, 144);
 }
 body:after{
   content:"";
