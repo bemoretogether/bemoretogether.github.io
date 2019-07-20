@@ -256,3 +256,10 @@ p.datetime {
   }
   .footer-logo { fill: rgb(253, 229, 157); }
 }
+
+.black-bar {
+  margin-top: 20px; 
+  margin-bottom: 100px;
+  height: 100px;
+  background: black;
+}
