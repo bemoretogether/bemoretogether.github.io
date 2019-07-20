@@ -97,11 +97,8 @@ body {
   margin: 0px auto;
   width: 100%;
   max-width: 1020px;
+  min-height: 100vh;
   padding: 24px;
-}
-
-.container-outer:last-child {
-  height: 100vh;
 }
 
 @media only screen and (max-width: 620px) {
@@ -120,6 +117,9 @@ body {
 .section { padding: 34px; }
 @media only screen and (max-width: 620px) {
   .section { padding: 30px; }
+  .container-outer:first-child > .container-inner > .section:first-child {
+    padding-bottom: 160px;
+  }
 }
 @media only screen and (max-width: 360px) {
   .container-outer { height: auto; }
@@ -249,12 +249,10 @@ p.datetime {
 }
 
 @media only screen and (max-width: 620px) {
-  .footer { background: black; }
   .footer-logo-container {
     width: 100%;
     text-align: center;
   }
-  .footer-logo { fill: rgb(253, 229, 157); }
 }
 
 .black-bar {
