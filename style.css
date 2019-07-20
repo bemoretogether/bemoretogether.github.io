@@ -38,15 +38,15 @@ body:after{
 
 .shape {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 34px;
+  right: 34px;
   width: 112px;
 }
 
 .circles { 
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 34px;
+  right: 34px;
 }
 
 @media only screen and (max-width: 620px) {
@@ -90,7 +90,7 @@ body:after{
   .container-outer:last-child { height: auto; }
 }
 
-@media only screen and (orientation: landscape) {
+@media only device and (orientation: landscape) {
   .container-outer { height: auto; }
 }
 
@@ -99,7 +99,7 @@ body:after{
   height: 100%;
 }
 
-.section { padding: 40px; }
+.section { padding: 34px; }
 @media only screen and (max-width: 620px) {
   .section { padding: 30px; }
 }
@@ -121,7 +121,7 @@ p.subhead { margin-top: 12px; }
 }
 
 .request-invitation {
-  padding: 40px;
+  padding: 34px;
   text-align: center;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
@@ -170,7 +170,7 @@ p.subhead { margin-top: 12px; }
   font-size: 3rem;
 }
 
-.card a { padding: 40px; }
+.card a { padding: 34px; }
 @media only screen and (max-width: 620px) {
   .card a { padding: 30px; }
 }
