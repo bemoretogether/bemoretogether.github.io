@@ -156,6 +156,12 @@ p.subhead { margin-top: 12px; }
   height: 100%;
 }
 
+.big-link {
+  transition: 0.14s;
+  background: transparent;
+  color: black;
+}
+
 .big-link:hover {
   color: rgb(253, 229, 157);
   background: black;
