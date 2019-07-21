@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
 body {
-  background-color: rgb(247, 222, 144);
+  background-color: rgb(255, 228, 147);
 }
 
 .gradient-container {
@@ -146,7 +146,7 @@ p.subhead { margin-top: 12px; }
 .request-invitation {
   padding: 34px;
   background: black !important;
-  color: rgb(253, 229, 157) !important;
+  color: rgb(255, 228, 147) !important;
   text-align: center;
   border-bottom: 2px solid black;
   font-size: 26px;
@@ -154,7 +154,7 @@ p.subhead { margin-top: 12px; }
 }
 
 .request-invitation:hover {
-  background: rgb(247, 222, 144) !important;
+  background: rgb(255, 228, 147) !important;
   color: black !important;
 }
 
@@ -180,7 +180,7 @@ p.subhead { margin-top: 12px; }
 }
 
 .big-link:hover {
-  color: rgb(253, 229, 157);
+  color: rgb(255, 228, 147);
   background: black;
 }
 
