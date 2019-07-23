@@ -76,11 +76,21 @@ body {
 }
 
 .circle:first-child {
-  margin-right: -4px;
+  animation-name: animation1;
+  animation-duration: 5.0s;
+  animation-iteration-count: infinite;
 }
 
 .circle:nth-child(2) {
-  margin-right: -2px;
+  animation-name: animation2;
+  animation-duration: 4.0s;
+  animation-iteration-count: infinite;
+}
+
+.circle:last-child {
+  animation-name: animation3;
+  animation-duration: 8.0s;
+  animation-iteration-count: infinite;
 }
 
 @media only screen and (max-width: 620px) {
@@ -260,4 +270,24 @@ p.datetime {
 .black-bar {
   height: 100px;
   background: black;
+}
+
+@keyframes animation1 {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(3px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes animation2 {
+  0% { transform: translateX(0px); }
+  33% { transform: translateX(-3px); }
+  66% { transform: translateX(1px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes animation3 {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-2px) }
+  66% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
 }
