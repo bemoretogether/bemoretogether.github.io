@@ -198,17 +198,10 @@ p.subhead { margin-top: 12px; }
   border-top: 2px solid black;
 }
 
-.card { 
-  border-right: 2px solid black; 
-}
 @media only screen and (max-width: 620px) {
-  .card { 
-    border-right: none;
-    border-bottom: 2px solid black;
-  }
+  .card { border-bottom: 2px solid black; }
 }
 
-.card:last-child { border-right: 0px; }
 @media only screen and (max-width: 620px) {
   .card:last-child { border-bottom: 0px; }
 }
@@ -228,10 +221,18 @@ p.subhead { margin-top: 12px; }
   .card p { font-size: 1.8rem; line-height: 1.8rem; }
 }
 
-.card a { padding: 34px; }
-@media only screen and (max-width: 620px) {
-  .card a { padding: 30px; }
+.card a {
+  padding: 34px; 
+  border-right: 2px solid black;
 }
+@media only screen and (max-width: 620px) {
+  .card a {
+    padding: 30px;
+    border-right: none; 
+  }
+}
+
+.card:last-child a { border-right: none; }
 
 p.datetime {
   font-size: 2rem;
