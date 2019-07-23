@@ -1,27 +1,26 @@
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
 body {
-  background-color: #ffeb99;
-}
-
-.gradient-container {
-  padding: 14px 0px;
-}
-
-.bg-gradient {
-  background: url(../images/background.jpg) top center;
+  background-image: url(images/background.jpg);
+  background-position: top center;
   background-size: cover;
-  height: 180px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(247, 222, 144);
 }
-
-.bg-gradient-line {
-  height: 100%;
-  width: 2px;
-  background: black;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -1.5px;
+body:after{
+  content:"";
+  position:fixed; /* stretch a fixed position to the whole screen */
+  top:0;
+  height:100vh; /* fix for mobile browser address bar appearing disappearing */
+  left:0;
+  right:0;
+  z-index:-1; /* needed to keep in the background */
+  background: url(images/background.jpg) top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .become {
@@ -76,21 +75,11 @@ body {
 }
 
 .circle:first-child {
-  animation-name: animation1;
-  animation-duration: 5.0s;
-  animation-iteration-count: infinite;
+  margin-right: -4px;
 }
 
 .circle:nth-child(2) {
-  animation-name: animation2;
-  animation-duration: 4.0s;
-  animation-iteration-count: infinite;
-}
-
-.circle:last-child {
-  animation-name: animation3;
-  animation-duration: 8.0s;
-  animation-iteration-count: infinite;
+  margin-right: -2px;
 }
 
 @media only screen and (max-width: 620px) {
@@ -107,33 +96,31 @@ body {
   margin: 0px auto;
   width: 100%;
   max-width: 1020px;
-  padding: 24px;
-  padding-bottom: 0;
-}
-
-.height-full {
   height: 100vh;
-}
-@media only screen and (max-width: 620px) {
-  .height-full {
-    height: auto;
-  }
+  padding: 24px;
 }
 
-.container-outer:last-child {
-  padding-bottom: 24px;
+@media only screen and (max-width: 620px) {
+  .container-outer:last-child { height: auto; }
+}
+
+@media only device and (orientation: landscape) {
+  .container-outer { height: auto; }
 }
 
 .container-inner {
-  border: 2px solid black;
+  border: 3px solid black;
   height: 100%;
 }
 
 .section { padding: 34px; }
 @media only screen and (max-width: 620px) {
   .section { padding: 30px; }
+}
+@media only screen and (max-width: 360px) {
+  .container-outer { height: auto; }
   .container-outer:first-child > .container-inner > .section:first-child {
-    padding-bottom: 200px;
+    padding-bottom: 160px;
   }
 }
 
@@ -155,21 +142,15 @@ p.subhead { margin-top: 12px; }
 
 .request-invitation {
   padding: 34px;
-  background: black !important;
-  color: #ffeb99 !important;
   text-align: center;
-  border-bottom: 2px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
   font-size: 26px;
   font-family: "RelativeBook";
 }
 
-.request-invitation:hover {
-  background: #ffeb99 !important;
-  color: black !important;
-}
-
 @media only screen and (max-width: 620px) {
-  .request-invitation {
+  .request-invitation { 
     padding: 30px 0px;
     border-bottom: none;
   }
@@ -190,18 +171,19 @@ p.subhead { margin-top: 12px; }
 }
 
 .big-link:hover {
-  color: #ffeb99;
+  color: rgb(253, 229, 157);
   background: black;
 }
 
-.cards {
-  border-top: 2px solid black;
-}
-
+.card { border-right: 3px solid black; }
 @media only screen and (max-width: 620px) {
-  .card { border-bottom: 2px solid black; }
+  .card { 
+    border-right: none;
+    border-bottom: 3px solid black;
+  }
 }
 
+.card:last-child { border-right: 0px; }
 @media only screen and (max-width: 620px) {
   .card:last-child { border-bottom: 0px; }
 }
@@ -210,29 +192,18 @@ p.subhead { margin-top: 12px; }
   height: 100%;
 }
 
-.card p { 
-  font-size: 3rem; 
-  line-height: 3rem;
-}
+.card p { font-size: 3rem; }
 @media only screen and (max-width: 910px) {
-  .card p { font-size: 2rem; line-height: 2rem; }
+  .card p { font-size: 2rem; }
 }
 @media only screen and (max-width: 800px) {
-  .card p { font-size: 1.8rem; line-height: 1.8rem; }
+  .card p { font-size: 1.8rem; }
 }
 
-.card a {
-  padding: 34px; 
-  border-right: 2px solid black;
-}
+.card a { padding: 34px; }
 @media only screen and (max-width: 620px) {
-  .card a {
-    padding: 30px;
-    border-right: none; 
-  }
+  .card a { padding: 30px; }
 }
-
-.card:last-child a { border-right: none; }
 
 p.datetime {
   font-size: 2rem;
@@ -262,45 +233,10 @@ p.datetime {
 }
 
 @media only screen and (max-width: 620px) {
+  .footer { background: black; }
   .footer-logo-container {
     width: 100%;
     text-align: center;
   }
+  .footer-logo { fill: rgb(253, 229, 157); }
 }
-
-.black-bar {
-  height: 100px;
-  background: black;
-}
-
-@keyframes animation1 {
-  0% { transform: translateX(0px); }
-  50% { transform: translateX(3px); }
-  100% { transform: translateX(0px); }
-}
-
-@keyframes animation2 {
-  0% { transform: translateX(0px); }
-  33% { transform: translateX(-3px); }
-  66% { transform: translateX(1px); }
-  100% { transform: translateX(0px); }
-}
-
-@keyframes animation3 {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-2px) }
-  66% { transform: translateX(3px); }
-  100% { transform: translateX(0); }
-}
-
-.dialog {
-  padding: 24px;
-}
-
-@media (hover: none) {
-  .request-invitation:hover {
-    background: black !important;
-    color: #ffeb99 !important;
-  }
-}
-
