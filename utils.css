@@ -101,3 +101,11 @@ details:not([open]) > *:not(summary) { display: none !important; }
   margin-right: auto;
   width: 448px;
 }
+
+form > div {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+}

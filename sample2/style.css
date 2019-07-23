@@ -291,3 +291,7 @@ p.datetime {
   66% { transform: translateX(3px); }
   100% { transform: translateX(0); }
 }
+
+.dialog {
+  padding: 24px;
+}
