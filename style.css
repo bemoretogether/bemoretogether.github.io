@@ -305,3 +305,40 @@ p.datetime {
   }
 }
 
+.Box--overlay {
+  background: black;
+}
+
+form > div {
+  width: 100%;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  border: none;
+  background: black;
+  padding: 8px 0px;
+  font-size: 1.3em;
+  border-bottom: 1px solid #ffeb99;
+  color: #ffeb99;
+  margin-top: 14px;
+}
+
+input[type=text]:first-child {
+  margin-top: 0;
+}
+
+input[type=submit] {
+  margin-top: 26px;
+  border: 1px solid #ffeb99;
+  color: #ffeb99;
+  background: none;
+  font-size: 1.3em;
+  padding: 6px 10px;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder {
+  color: #ffeb99;
+}
