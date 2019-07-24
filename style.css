@@ -323,6 +323,7 @@ input[type=email] {
   border-bottom: 1px solid #ffeb99;
   color: #ffeb99;
   margin-top: 14px;
+  border-radius: 0px;
 }
 
 input[type=text]:first-child {
@@ -333,9 +334,10 @@ input[type=submit] {
   margin-top: 26px;
   border: 1px solid #ffeb99;
   color: #ffeb99;
-  background: none;
+  background: black;
   font-size: 1.3em;
   padding: 6px 10px;
+  border-radius: 0px;
 }
 
 input[type=text]::placeholder,
