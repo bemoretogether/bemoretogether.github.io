@@ -131,8 +131,12 @@
     <script>
       var iframe = document.querySelector('[name=google-form]');
       var details = document.querySelector('details');
+      var button = document.querySelector('.request-invitation');
+      var form = document.querySelector('form');
       iframe.onload = function(e) {
         details.open = false;
+        button.textContent = "Request sent!";
+        form.reset();
       };
     </script>
   </body>
