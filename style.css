@@ -335,10 +335,10 @@ input[type=submit] {
   border: 1px solid #ffeb99;
   color: #ffeb99;
   background: black;
-  -webkit-appearance: none;
   font-size: 1.3em;
   padding: 6px 10px;
   border-radius: 0px;
+  -webkit-appearance: none;
 }
 
 input[type=text]::placeholder,
