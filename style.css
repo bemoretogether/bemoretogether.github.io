@@ -244,20 +244,6 @@ p.datetime {
   }
 }
 
-.footer-copy { width: 60%; }
-@media only screen and (max-width: 940px) {
-  .footer-copy { width: 68%; }
-}
-@media only screen and (max-width: 870px) {
-  .footer-copy { width: 78%; }
-}
-@media only screen and (max-width: 790px) {
-  .footer-copy { width: 90%; }
-}
-@media only screen and (max-width: 620px) {
-  .footer-copy { width: auto; }
-}
-
 @media only screen and (max-width: 620px) {
   .footer-logo-container {
     width: 100%;
@@ -266,7 +252,7 @@ p.datetime {
 }
 
 .black-bar {
-  height: 100px;
+  padding: 24px;
   background: black;
 }
 
@@ -339,5 +325,29 @@ input[type=submit] {
 
 input[type=text]::placeholder,
 input[type=email]::placeholder {
+  color: #ffeb99;
+}
+
+.social-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+}
+
+.social-container {
+  height: 100%;
+}
+
+.social-container a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 620px) {
+  .social-container {
+    text-align: center;
+  }
+}
+
+.yellow {
   color: #ffeb99;
 }
