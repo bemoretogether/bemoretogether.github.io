@@ -47,13 +47,16 @@
               target="google-form" method="POST" id="mG61Hd">
               <input type="text" autocomplete="off" tabindex="0" aria-label="Name"
                 aria-describedby="i.desc.453473965 i.err.453473965"
-                name="entry.1607146855" value="" dir="auto" required placeholder="Name">
+                name="entry.1607146855" value="" dir="auto" required
+                placeholder="Name" required>
               <input type="email" autocomplete="off" tabindex="0" aria-label="Email"
                 aria-describedby="i.desc.1415397519 i.err.1415397519"
-                name="entry.1641649311" value="" dir="auto" placeholder="Email">
+                name="entry.1641649311" value="" dir="auto" placeholder="Email"
+                required>
               <input type="text" autocomplete="off" tabindex="0" aria-label="Company"
                 aria-describedby="i.desc.227489910 i.err.227489910"
-                name="entry.1421242465" value="" hdir="auto" placeholder="Company">
+                name="entry.1421242465" value="" hdir="auto"
+                placeholder="Company" required>
               <input type="text" autocomplete="off" tabindex="0" aria-label="Title"
                 aria-describedby="i.desc.48115609 i.err.48115609"
                 name="entry.620674796" value="" dir="auto" placeholder="Title (optional)">
@@ -124,5 +127,13 @@
     <div class="container-outer">
       <div class="black-bar"></div>
     </div>
+
+    <script>
+      var iframe = document.querySelector('[name=google-form]');
+      var details = document.querySelector('details');
+      iframe.onload = function(e) {
+        details.open = false;
+      };
+    </script>
   </body>
 </html>
