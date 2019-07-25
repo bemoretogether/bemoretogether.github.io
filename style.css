@@ -142,13 +142,14 @@ p {
   font-size: 1.5rem;
   margin: 0px;
   padding: 0px;
+  line-height: 1.5rem;
 }
 
 @media only screen and (max-width: 620px) {
   p { font-size: 1.3rem }
 }
 
-p.subhead { margin-top: 12px; }
+p.subhead { margin-top: 24px; }
 
 @media only screen and (max-width: 620px) {
   p.subhead { margin-top: 14px; }
@@ -159,7 +160,7 @@ p.subhead { margin-top: 12px; }
   background: black !important;
   color: #ffeb99 !important;
   text-align: center;
-  border-bottom: 2px solid black;
+  border-top: 2px solid black;
   font-size: 26px;
   font-family: "RelativeBook";
 }
@@ -244,6 +245,21 @@ p.datetime {
   }
 }
 
+.footer-logo {
+  fill: #ffeb99;
+}
+
+@media only screen and (max-width: 620px) {
+  .footer { 
+    display: block;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 222px;
+    margin-top: 24px;
+  }
+}
+
 @media only screen and (max-width: 620px) {
   .footer-logo-container {
     width: 100%;
@@ -254,6 +270,7 @@ p.datetime {
 .black-bar {
   padding: 24px;
   background: black;
+  align-items: center;
 }
 
 @keyframes animation1 {
@@ -351,3 +368,46 @@ input[type=email]::placeholder {
 .yellow {
   color: #ffeb99;
 }
+
+@media only screen and (max-width: 620px) {
+  .information {
+    display: block;
+  }
+}
+
+.information > div:first-child {
+  padding-right: 80px;
+}
+
+@media only screen and (max-width: 620px) {
+  .information > div:first-child {
+    padding-right: 0px;
+  }
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 620px) {
+  .description { 
+    font-size: 1.1rem;
+  }
+}
+
+.time-and-date { height: 100%; }
+@media only screen and (max-width: 620px) {
+  .time-and-date p { 
+    margin-top: 20px; 
+    font-size: 1.2rem;
+  }
+}
+
+.time-and-date p {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 620px) {
+  
+
