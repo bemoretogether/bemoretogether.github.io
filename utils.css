@@ -52,6 +52,7 @@
   .d-block-sm { display: block !important; }
   .flex-grow-sm { flex-grow: 1 !important }
   .flex-grow-lg { flex-grow: inherit }
+  .flex-row-lg { flex-direction: column; }
 }
 
 @media only screen and (max-width: 620px) {
@@ -100,10 +101,6 @@ details:not([open]) > *:not(summary) { display: none !important; }
   margin-left: auto;
   margin-right: auto;
   width: 448px;
-}
-
-form > div {
-  margin-bottom: 12px;
 }
 
 label {
