@@ -114,6 +114,7 @@ body {
 .height-full {
   height: 100vh;
   max-height: 760px;
+  min-height: 500px;
 }
 @media only screen and (max-width: 620px) {
   .height-full {
