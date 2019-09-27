@@ -27,6 +27,14 @@
   position: absolute;
 }
 
+.text-bold { font-weight: bold; }
+
+.bg-gray-light { background-color: rgba(0, 0, 0, 0.2); }
+
+.height-100 {
+  height: 100%;
+}
+
 @font-face {
   font-family: "Become";
   src: url("fonts/Become/become.eot");
