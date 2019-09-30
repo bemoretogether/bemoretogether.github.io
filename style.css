@@ -217,9 +217,14 @@ p.subhead { margin-top: 24px; }
   line-height: 3rem;
 }
 
+.speaker-image {
+  background-size: cover;
+  background-position: center center;
+}
+
 @media only screen and (max-width: 620px) {
   .speaker-image {
-    height: 200px;
+    height: 300px;
   }
 }
 
