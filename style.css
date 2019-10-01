@@ -188,10 +188,10 @@ p.subhead { margin-top: 24px; }
   background: transparent;
 }
 
-/* .big-link:hover { */
-/*   color: #ffeb99; */
-/*   background: black; */
-/* } */
+a.big-link:hover {
+  color: #ffeb99;
+  background: black;
+}
 
 .cards {
   border-top: 2px solid black;
