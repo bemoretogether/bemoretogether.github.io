@@ -75,24 +75,6 @@ body {
   display: inline-block;
 }
 
-.circle:first-child {
-  animation-name: animation1;
-  animation-duration: 5.0s;
-  animation-iteration-count: infinite;
-}
-
-.circle:nth-child(2) {
-  animation-name: animation2;
-  animation-duration: 4.0s;
-  animation-iteration-count: infinite;
-}
-
-.circle:last-child {
-  animation-name: animation3;
-  animation-duration: 8.0s;
-  animation-iteration-count: infinite;
-}
-
 @media only screen and (max-width: 620px) {
   .circle {
     width: 26%;
@@ -277,7 +259,7 @@ p.datetime {
 }
 
 .footer-logo {
-  fill: #ffeb99;
+  fill: #000000;
 }
 
 @media only screen and (max-width: 620px) {
@@ -300,8 +282,8 @@ p.datetime {
 
 .black-bar {
   padding: 24px;
-  background: black;
   align-items: center;
+  border: 3px solid black;
 }
 
 @keyframes animation1 {
